@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1792729087.4887 "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" "main.pdf" "main" 1792729088.39768 0
+["pdflatex"] 1792737057.11189 "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" "main.pdf" "main" 1792737057.97092 0
   "C:/Users/willi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1791547131 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/willi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1791546629 13333487 0880f32e4a7356dd08b18856129655c6 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ectt1000.tfm" 993062340 1348 d70ddf2d5d512b838e50a335e385e919 ""
@@ -31,6 +31,7 @@
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247596666 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
@@ -122,15 +123,15 @@
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1761901070 7532 26d26e9d8f2ca784270d5da8ec7d102b ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" 1792729086 3627 54b17c3bfa13bbf4552d2a002574a206 ""
-  "cover.aux" 1792729088 965 1135aa6bdb34dc7e69232863212a85cc "pdflatex"
+  "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" 1792737055 10535 a95b4dfd2abda5f70f64f42117238d4b ""
+  "cover.aux" 1792737057 965 1135aa6bdb34dc7e69232863212a85cc "pdflatex"
   "cover.tex" 1791550538 1133 96d9bd8ef1694cf4e068e95e921efdc1 ""
   "figures/coulomb_direct.pdf" 1791546403 5557 e51ea044cb466b98b2dd7b039a2cd965 ""
   "figures/uom_banner.pdf" 1791546403 39622 9739bcd37b5d485fa8a21c6a545e994a ""
-  "main.aux" 1792729088 1661 951140548e0773f98b840e04a1fec199 "pdflatex"
-  "main.out" 1792729088 825 9f87d3d2995bda2ac17912ef4b9ae2a5 "pdflatex"
-  "main.tex" 1792729086 3627 54b17c3bfa13bbf4552d2a002574a206 ""
-  "main.toc" 1792729088 543 c19e4ef53083c08ac599ca2737187ab6 "pdflatex"
+  "main.aux" 1792737057 2029 2e042c5eee7e3521fb288f1d6de44357 "pdflatex"
+  "main.out" 1792737057 1333 54fd503beef4a9f3d45cf3cc9133a5ce "pdflatex"
+  "main.tex" 1792737055 10535 a95b4dfd2abda5f70f64f42117238d4b ""
+  "main.toc" 1792737057 788 797ef2f93b168131d4d78ec22bb3327b "pdflatex"
   "preamble.tex" 1791546403 5290 edb446ac6613ea99595b87993e39c38d ""
   (generated)
   "cover.aux"

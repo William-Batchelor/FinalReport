@@ -17,26 +17,25 @@
 %---------------------------MAIN BODY
 
 \chapter{Introduction}
-In which we talk about granaries and justify the importance of the question
-
-Granaries are storage structure for grain, used to protect harvested grain from poor weather and pests.
-To prevent spoilage grain needs to kept at a low moisture content; this state may initially be achieved
+Granaries are storage structures for grain, used to protect harvested grain from poor weather and pests.
+To prevent spoilage grain needs to be kept at a low moisture content; this state may initially be achieved
 by harvesting during dry conditions, or by drying harvested grain. Drying sometimes happens at the granary.
 
-It is typical for a granary to service all of the farms in an area, often operating as either a collective or
-through commercial agreements.
+It is typical for a granary to service all of the farms in an area, often operating either as a collective or
+under commercial agreements.
 
-Grain must be harvested at the correct time of year, and the need for dry weather leads to busy peak periods
-for granaries, corresponding with appropriate weather. Deliveries can cluster, as farmers restart harvesting
+Grain must be harvested at the correct time of year, and the need for dry conditions leads to busy peak periods
+for granaries corresponding with appropriate weather. Deliveries cluster, as farmers restart harvesting
 operations after inclement weather or race to harvest as much as possible before rain.
 
-These high demand periods can lead to significant queues, incurring costs of time and money. Understanding
-the likely demands placed on a granary is therefore important to decisions regarding its design and operation.
-Planners may wish to invest in equipment to reduce unloading time or add additional service bays; managers may
-wish to alter policy regarding opening hours or the order in which trucks are served.
+These high demand periods can lead to significant queues, incurring costs of time and money as trucks sit idle
+and farms run out of buffer storage. Understanding the likely demands placed on a granary is therefore important
+to decisions regarding its design and operation. Planners may wish to invest in equipment to reduce unloading
+time or add additional service bays; managers may wish to alter policy regarding opening hours or the order in
+which trucks are served.
 
 Mathematical models are a useful way of investigating these demands and evaluating different investments and
-policies. In this investigation we implement three different models of a granary, and investigate where the models
+policies. In this investigation we implement three simulation models of a granary, and investigate where the models
 agree and disagree. We compare to closed form results for queueing systems, and consider where the models likely
 fall short of reality.
 
@@ -46,17 +45,132 @@ fall short of reality.
 In which we cover basic queueing theory, classify our problem and mention
 the closed form results that are going to be important for verification.
 
+Before considering the specifics of granaries, it is worth establishing some basic queueing theory.
+
+In the typical terminology, a customer is an entity subject to a queue, and a server is an entity that
+provides some resource to customers. In the usual case a queue is FIFO - First In First Out, a system familiar
+to anyone who has visited a grocery store. It is worth being aware of an alternative structure, the priority queue,
+where customers have a priority value, with servers always serving the next highest priority customer.
+
+Queueing systems are classified with Kendall's notation, a shorthand to quickly communicate the behaviour of the system.
+A classification is shown as A/S/c, where A denotes the probability distribution driving customer arrival,
+S denotes the distribution driving service time, and c denotes the number of servers in the system.
+
+We will consider some examples to get an idea of the scheme.
+
+A D/D/1 system has deterministic arrivals, deterministic service time, and a single server. In other words, customers
+always show up the same amount of time after the previous customer, and they are always served in a fixed amount
+of time. This system is of little interest, if the server processes customers faster than they arrive
+there is never a queue, and if it is slower the queue grows without bound.
+
+An M/D/1 system has Poisson arrivals, deterministic service times, and a single server. M stands for memoryless; Poisson
+arrivals means the time between arrivals is an exponential random variable.
+
+An M/M/1 system possesses Poisson arrivals, exponentially distributed service times, and a single server.
+
+An M/M/c system possesses Poisson arrivals, exponentially distributed service times, and c servers.
+
+The nice thing about all of the above systems is they possess simple service functions and memoryless (Poisson) arrival functions,
+permitting simple closed form solutions to the behaviour of the queue in the long term.
+
+A G/D/1 queue on the other hand, with a general (arbitrary) distribution for arrivals, does not necessarily
+have a closed form solution, meaning analysis must rely on approximation or simulation. For completeness it is worth noting that
+M/G/1 queues do possess closed form results; memoryless arrival is the important condition for closed form solutions to exist.
+
+Need words on closed form for M/D/1 - Pollaczek-Khinchine
+
+Finite source and extended Kendall needs some words
+
+Little's law
+
+
+
+
+
 
 \chapter{Models}
 In which we discuss the three models of a granary we're going to be using
 
 First the shared infrastructure of a simple queue and a single deterministic server
 
-- An open loop with Markov modulated Poisson arrival
+Before discussing the three specific models, we will touch on their commonalities, and the behaviour
+we want to capture. All models feature a single FIFO queue at the granary determining service order.
+Further, service time is deterministic.
 
-- A closed loop with an abstracted truck fleet and an abstracted grain supply
+Clustering due to weather
+The weather system
 
-- A simulation of all the farms in the catchment each with their own trucks
+
+\section{Open model}
+The first model is the simplest. At its simplest it is an M/D/1 queueing system, with Poisson arrivals.
+
+Interarrival time is driven by a parameter $\lambda$, trucks arrive, queue, unload at the granary, before
+disappearing into the aether.
+
+We can run the simulation in this simple form to confirm against closed form results, but in practice
+we want to incorporate opening hours and weather effects.
+
+To that end, we track the moisture level in the grain throughout the season. Any trucks arriving while
+moisture is above some threshold value are rejected with linearly increasing probability. At a certain
+point, all arrivals are rejected. This has the effect of increasing the interarrival time as conditions
+become unfavourable to the harvest. Similarly, if the granary is closed for the night,
+all arrivals are rejected.
+
+
+\section{Closed model with abstract farm}
+The second model increases fidelity by closing the loop and no longer consigning trucks to the void.
+Instead, we introduce a new entity with its own queue, the farm. Grain accumulates at the farm as
+it is harvested, trucks queue there to pick up grain, travel to the granary to unload it, before
+returning to the farm to queue again.
+
+There is a fixed fleet of trucks available, each truck possesses its own travel time between the granary
+and the farm. Travel times are drawn uniformly from a circle, accounting for the fact that area of farmland
+available increases as the square of the distance from the granary. Each trip noise is applied to the travel
+time reflecting variance in conditions on the road.
+
+Again we must deal with weather and opening hours.
+
+Weather enters this model through the rate at which grain is harvested. Similarly to the open model, below
+a moisture threshold harvest proceeds at full speed, above it the rate decreases linearly until it eventually
+reaches zero.
+
+Opening hours enter this model in the step where trucks attempt to depart the farm and head to the granary.
+The decision was made that farms would operate continuously except as prevented by moisture levels, whereas
+the granary keeps to its opening hours, except for serving trucks in its queue at closing time,
+which we allow as overtime. To that end, trucks expected to arrive after closing time are instead scheduled
+to arrive the next morning. This matches morning clustering often seen in reality.
+
+We also wish to promote clustering after a stoppage due to rainfall. To that end, when such an event occurs,
+trucks are prohibited from leaving the granary until a threshold of stored grain is reached. The intention
+here is to reflect that this farm is intended as an abstraction of a number of farms. If all of the farms
+possess between them only enough grain to fill a single truck, no truck will be filled. Assuming they harvest
+at a similar rate, all of them would be expected to release trucks at similar times; thus, the threshold. Away from
+stoppages it's assumed that if the abstract farm has grain to dispatch then the hypothetical farm any given
+truck is serving would have grain to dispatch after its round trip. In the case of trucks with short round trips
+that may not be a good assumption.
+
+Another flaw of this model is the bottleneck around truck dispatch. If the time it takes to fill an individual truck
+is set to a plausible level, then with a single server the rate at which grain can be dispatched is limited compared
+to a model with multiple farms, each with their own server, 
+
+
+
+
+
+
+\section{Closed model with farms}
+Our third model partakes of most of the characteristics of the second model. The crucial difference is this
+time we consider multiple farms with their own fleet of trucks and their own queue; the other differences
+all follow from this.
+
+Travel time to and from each farm is drawn uniformly from a circle, each truck in a farms fleet possesses the
+same travel time. Noise is still applied independently to each trip.
+
+Weather is treated the same, except each farm of course has its own grain. W`e no longer need to enforce
+a threshold of grain before releasing trucks after a stoppage, each farm will naturally wait until it has
+sufficient grain to fill a truck before dispatching one, producing the desired clustering.
+
+The key difference between 
 
 
 \chapter{Implementation}

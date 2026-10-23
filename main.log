@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.9)  23 OCT 2026 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.9)  23 OCT 2026 17:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -623,7 +623,7 @@ Package hyperref Info: Link coloring ON on input line 7.
 \openout2 = `cover.aux'.
 
  (cover.tex
-<figures/uom_banner.pdf, id=35, 421.77576pt x 424.98775pt>
+<figures/uom_banner.pdf, id=47, 421.77576pt x 424.98775pt>
 File: figures/uom_banner.pdf Graphic file (type pdf)
 <use figures/uom_banner.pdf>
 Package pdftex.def Info: figures/uom_banner.pdf  used on input line 6.
@@ -636,7 +636,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
  (C:\Users\willi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/coulomb_direct.pdf, id=36, 449.48239pt x 385.25063pt>
+<figures/coulomb_direct.pdf, id=48, 449.48239pt x 385.25063pt>
 File: figures/coulomb_direct.pdf Graphic file (type pdf)
 <use figures/coulomb_direct.pdf>
 Package pdftex.def Info: figures/coulomb_direct.pdf  used on input line 32.
@@ -665,7 +665,7 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 \chapter
+l.44 \chapter
              {Background} [2
 
 ]
@@ -676,25 +676,25 @@ Chapter 2.
 Chapter 3.
 [4
 
-]
+] [5]
 Chapter 4.
-[5
-
-]
-Chapter 5.
 [6
 
 ]
-Chapter 6.
+Chapter 5.
 [7
 
 ]
-Chapter 7.
+Chapter 6.
 [8
 
 ]
-Chapter 8.
+Chapter 7.
 [9
+
+]
+Chapter 8.
+[10
 
 ] (main.aux (cover.aux))
  ***********
@@ -702,20 +702,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9F87D3D2995BDA2AC17912EF4B9AE2A5;825.
+(rerunfilecheck)             Checksum: 54FD503BEEF4A9F3D45CF3CC9133A5CE;1333.
  ) 
 Here is how much of TeX's memory you used:
- 16360 strings out of 467871
- 260254 string characters out of 5418376
- 740611 words of memory out of 5000000
- 44966 multiletter control sequences out of 15000+600000
- 636097 words of font info for 70 fonts, out of 8000000 for 9000
+ 16369 strings out of 467871
+ 260366 string characters out of 5418376
+ 745611 words of memory out of 5000000
+ 44971 multiletter control sequences out of 15000+600000
+ 636702 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,5n,82p,456b,549s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (11 pages, 166584 bytes).
+<C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (12 pages, 186240 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
