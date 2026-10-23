@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.9)  24 OCT 2026 06:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.9)  24 OCT 2026 06:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -997,7 +997,7 @@ File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 LaTeX Warning: Unused global option(s):
     [10.5pt].
 
-(main.aux)
+(main.aux (cover.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -1108,12 +1108,13 @@ Option `amssymb' provided!
 
 \c@lstlisting=\count508
 Package hyperref Info: Link coloring ON on input line 23.
+(main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(C:\Users\willi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+ (C:\Users\willi\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1137,7 +1138,7 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 \openout2 = `cover.aux'.
 
 (cover.tex
-<figures/uom_banner.pdf, id=6, 421.77576pt x 424.98775pt>
+<figures/uom_banner.pdf, id=46, 421.77576pt x 424.98775pt>
 File: figures/uom_banner.pdf Graphic file (type pdf)
 <use figures/uom_banner.pdf>
 Package pdftex.def Info: figures/uom_banner.pdf  used on input line 6.
@@ -1150,7 +1151,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
  (C:\Users\willi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/coulomb_direct.pdf, id=7, 449.48239pt x 385.25063pt>
+<figures/coulomb_direct.pdf, id=47, 449.48239pt x 385.25063pt>
 File: figures/coulomb_direct.pdf Graphic file (type pdf)
 <use figures/coulomb_direct.pdf>
 Package pdftex.def Info: figures/coulomb_direct.pdf  used on input line 32.
@@ -1161,8 +1162,7 @@ Package pdftex.def Info: figures/coulomb_direct.pdf  used on input line 32.
 {C:/Users/willi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figures/uom_banner.pdf> <./figures/coulomb_direct.pdf
 
 pdfTeX warning: pdflatex (file ./figures/coulomb_direct.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [2])
-No file main.toc.
+>] [2]) (main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1177,9 +1177,6 @@ l.35 \chapter
 ]
 Chapter 1.
 
-LaTeX Warning: Citation 'Hassanizadeh' on page 2 undefined on input line 40.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1188,9 +1185,6 @@ l.59 \chapter
 
 ]
 Chapter 2.
-
-LaTeX Warning: Citation 'Franx' on page 3 undefined on input line 116.
-
 [3
 
 ] [4]
@@ -1224,42 +1218,24 @@ Chapter 7.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  CACA03CD5593919328C0CEA29973DBF9;1234.
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: CACA03CD5593919328C0CEA29973DBF9;1234.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44882 strings out of 467871
- 1004934 string characters out of 5418376
- 1721921 words of memory out of 5000000
- 73041 multiletter control sequences out of 15000+600000
- 641917 words of font info for 91 fonts, out of 8000000 for 9000
+ 44952 strings out of 467871
+ 1007075 string characters out of 5418376
+ 1725678 words of memory out of 5000000
+ 73096 multiletter control sequences out of 15000+600000
+ 642431 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,9n,132p,1971b,1142s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (14 pages, 263268 bytes).
+ 114i,9n,132p,1981b,1322s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (14 pages, 314119 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

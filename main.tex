@@ -3,7 +3,7 @@
 \input{preamble}
 \usepackage{morefloats}
 \usepackage[backend=bibtex, style=authoryear]{biblatex}
-\addbibresource{biblio.bib}
+\addbibresource{bibliography_new.bib}
 \usepackage{booktabs, pgfplotstable}
 \pgfplotstableset{
   granary/.style={
@@ -37,7 +37,7 @@ Granaries are storage structures for grain, used to protect harvested grain from
 To prevent spoilage grain needs to be kept at a low moisture content; this state may initially be achieved
 by harvesting during dry conditions, or by drying harvested grain. Drying sometimes happens at the granary.
 It is typical for a granary to service all of the farms in an area, often operating either as a collective or
-under commercial agreements \cite{Hassanizadeh}.
+under commercial agreements (\cite{hassanizadeh_discrete_2024}).
 
 Grain must be harvested at the correct time of year, and the need for dry conditions leads to busy peak periods
 for granaries corresponding with appropriate weather. Deliveries cluster, as farmers restart harvesting
@@ -48,7 +48,7 @@ and farms run out of buffer storage. Understanding the likely demands placed on 
 to decisions regarding its design and operation. Planners may wish to invest in equipment to reduce unloading
 time or add additional service bays; managers may wish to alter policy regarding opening hours or the order in
 which trucks are served. Mathematical models are a useful way of investigating these demands and evaluating different investments and
-policies cite{berruto 2000, Kryukova, berruto}.
+policies (\cite{berruto_using_2000, kryukova2025optimizing, berruto_analyzing_2001}).
 
 In this investigation we implement three simulation models of a granary, and investigate where the models
 agree and disagree. We compare to closed form results for queueing systems, and consider where the models likely
@@ -57,7 +57,7 @@ fall short of reality.
 
 
 \chapter{Background}
-This section derived from \cite{heszberger_dr}.
+This section derived from (\cite{sztrik2016basic}).
 
 Before considering the specifics of granaries, it is worth establishing some basic queueing theory.
 
@@ -113,7 +113,7 @@ Where:
 \end{description}
 
 We can go further than just average behaviour. For the M/D/1 queue, the full
-distribution of the waiting time $W$ is also known in closed form, a result due to Erlang \cite{Franx}:
+distribution of the waiting time $W$ is also known in closed form, a result due to Erlang (\cite{franx_simple_2001}):
 
 \begin{equation}
   P(W \le t) = (1-\rho) \sum_{k=0}^{\lfloor t/D \rfloor}
