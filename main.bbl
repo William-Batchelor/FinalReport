@@ -1,13 +1,44 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{abramowitz1970}
-M.~Abramowitz and I.~Stegun.
-\newblock {\em Handbook of Mathematical Functions}.
-\newblock Dover Publishing Inc. New York, 1970.
-
-\bibitem{press1992}
-W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery.
-\newblock {\em Numerical recipes in Fortran (Cambridge)}.
-\newblock Cambridge Univ. Press, 1992.
-
-\end{thebibliography}
+\datalist[entry]{nyt/global//global/global/global}
+  \entry{heszberger_dr}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Sztrik},
+         familyi={S\bibinitperiod},
+         given={János},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Basic Queueing Theory}
+    \field{year}{2016}
+  \endentry
+\enddatalist
+\endinput
