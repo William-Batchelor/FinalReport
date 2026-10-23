@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.9)  24 OCT 2026 06:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.9)  24 OCT 2026 06:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1197,21 +1197,37 @@ Chapter 4.
 
 ]
 Chapter 5.
+<figures/rainfall.png, id=129, 412.4208pt x 326.6604pt>
+File: figures/rainfall.png Graphic file (type png)
+<use figures/rainfall.png>
+Package pdftex.def Info: figures/rainfall.png  used on input line 278.
+(pdftex.def)             Requested size: 412.41978pt x 326.65959pt.
 PGFPlots: reading {model1_verification.csv}
+<figures/erlang_cdf.png, id=131, 462.528pt x 346.896pt>
+File: figures/erlang_cdf.png Graphic file (type png)
+<use figures/erlang_cdf.png>
+Package pdftex.def Info: figures/erlang_cdf.png  used on input line 317.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 [8
 
-]
+ <./figures/rainfall.png>] [9 <./figures/erlang_cdf.png>]
 Chapter 6.
 PGFPlots: reading {model1.csv}
 PGFPlots: reading {model2.csv}
 PGFPlots: reading {model3.csv}
-[9
+[10
 
-] [10]
+]
+<figures/queue_traces.png, id=152, 406.1574pt x 324.7332pt>
+File: figures/queue_traces.png Graphic file (type png)
+<use figures/queue_traces.png>
+Package pdftex.def Info: figures/queue_traces.png  used on input line 411.
+(pdftex.def)             Requested size: 406.1564pt x 324.7324pt.
+ [11 <./figures/queue_traces.png>]
 Chapter 7.
-[11
+[12
 
-] [12
+] [13
 
 ] (main.aux (cover.aux))
  ***********
@@ -1225,17 +1241,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44952 strings out of 467871
- 1007075 string characters out of 5418376
- 1725678 words of memory out of 5000000
- 73096 multiletter control sequences out of 15000+600000
+ 44974 strings out of 467871
+ 1007688 string characters out of 5418376
+ 1725681 words of memory out of 5000000
+ 73117 multiletter control sequences out of 15000+600000
  642431 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,9n,132p,1981b,1322s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (14 pages, 314119 bytes).
+Output written on main.pdf (15 pages, 495428 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

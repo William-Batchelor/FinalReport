@@ -275,8 +275,7 @@ Experiments are parallelised with joblib. This is straightforward as replication
 parallel. As replications are seeded by index rather than worker, results are identical regardless of the number of workers or job order.
 
 \chapter{Validation}
-- Weather graph
-TODO - Include image
+\includegraphics{figures/rainfall.png}
 
 First we consider our weather generator. Across 20 harvest long iterations we seem to be averaging around 1mm of rain in a day, give or take fifty percent, spread
 relatively evenly but lumpily over the duration. By physical intuition this seems about right. Given we aren't modeling a particular system and the relationship
@@ -315,7 +314,7 @@ note that simulated values are typically within one or two SEM of theory, with d
 growing somewhat at higher $\rho$ values.
 
 
-TODO - Include graphic
+\includegraphics{figures/erlang_cdf.png}
 
 Here we plot simulated wait time distribution against Erlang's closed form result, and observe
 strong agreement across the whole range.
@@ -408,9 +407,10 @@ to more severe clustering and thus higher wait times. However, this doesn't expl
 in wait time when increasing the number of farms from 1 farm in Model 2 to 5 farms in Model
 3.
 
-- Comparison results
-TODO - Include graph
-Looking at Figure 6.TODO we see a few things.
+
+\includegraphics{figures/queue_traces.png}
+
+Looking at the figure we see a few things.
 
 Across all models we see periodic periods without queueing. This is good, it means the granary
 is shutting down for the night as intended.
