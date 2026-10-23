@@ -146,7 +146,8 @@ queueing. This makes it a good check in situations where we lack nice closed for
 \chapter{Models}
 Before discussing the three specific models, we will touch on their commonalities, and the behaviour
 we want to capture. All models feature a single FIFO queue at the granary determining service order.
-Further, the granary possesses a single server with deterministic service time.
+Further, the granary possesses a single server with deterministic service time. The granary operates between
+7am and 5pm, trucks that are in line at closing time are processed in overtime.
 
 Shared between all three models in one weather and moisture system. This system generates synthetic
 hourly rainfall data, and then uses that to predict crop moisture minute by minute, which the individual
@@ -272,7 +273,7 @@ creates its own generator with default\_rng. Weather recieves seperate seeding t
 outside of the simulation loop and passed in, so different parameters can be compared against the same weather.
 
 Experiments are parallelised with joblib. This is straightforward as replications are entirely independent, so the problem is embarrassingly
-parallel. As replications are seeded by index rather than worker, results are identical regardless of the number of workers or job order.
+parallel. Each task recieves an explicit seed and pregenerated moisture array, so results are identical regardless of the number of workers or job order.
 
 \chapter{Validation}
 \includegraphics{figures/rainfall.png}
@@ -321,9 +322,11 @@ strong agreement across the whole range.
 
 It appears as though the simulation and at least the open model is behaving appropriately.
 
-For Models 2 and 3 there aren't closed form results to compare against. We can use Little's
-law to check for bookkeeping errors, and examine queue length over time against its expected behaviour.
-This information can be found in the next chapter.
+For Models 2 and 3 there aren't closed form results to compare against, but we can use Little's
+law to check for bookkeeping errors. Since $L = \lambda W$, we expect $L / (\lambda W) = 1$.
+On the parameter sweep this was reported for all settings, and always found to be true.
+Otherwise, we examine queue length over time against its expected behaviour and check for
+and check for behaviour that is obviously wrong. This can be done on the graphs in the next chapter.
 
 
 \chapter{Results and discussion}
@@ -432,7 +435,32 @@ This time with multiple farms the return rate isn't bottlenecked, and so the spi
 
 
 \chapter{Conclusion}
-TODO
+We successfully implemented a few different models of a granary. None were particularly realistic,
+but Model 3 is perhaps getting close enough to be useful, if properly tuned against real data.
+
+Key areas I would find interesting to investigate further are the behaviour of Model 2 if more servers
+were implemented, more complicated behaviour like drying or partitioning grain at the granary,
+and the use of real weather data.
+
+One of the original intentions of the project was to look at how weather variability affected
+queueing behaviour, however this fell to the wayside as we focussed more on the comparison of different models.
+Returning to this in a future investigation would be worthwhile.
+
+In terms of scientific computing learning my key take-aways were:
+
+- Git isn't scary and is fantastic. Being secure in being able to return to a known working version
+of one's software makes experimenting with different approaches much less daunting.
+
+- Using profiling tools is much easier than spamming timers everywhere and provides
+a much better picture of what is actually using resources.
+
+- Parallelisation is much easier than I expected provided the problem is appropriate.
+
+- Proper seeding makes everything easier and also isn't that hard.
+
+- Learning about granaries and queueing theory was fun!
+
+
 
 
 \printbibliography

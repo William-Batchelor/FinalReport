@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1792785002.85995 "main.aux" "main.bbl" "main" 1792785237.39003 0
+["bibtex main"] 1792785002.85995 "main.aux" "main.bbl" "main" 1792786829.16361 0
   "./bibliography_new.bib" 1792784232 2640 c7d9b8649af1968be4cf3af54c9a19a3 ""
-  "./main-blx.bib" 1792785236 342 73514f57ec3137b3b33c6de31c0e88f7 ""
+  "./main-blx.bib" 1792786828 342 73514f57ec3137b3b33c6de31c0e88f7 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1752408733 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "cover.aux" 1792785236 4194 34e27cc49fb3f5e4ff60f3539bc9e78c "pdflatex"
-  "main.aux" 1792785236 5195 53e5b2b6a48f0067800148ff4494beca "pdflatex"
+  "cover.aux" 1792786827 4194 34e27cc49fb3f5e4ff60f3539bc9e78c "pdflatex"
+  "main.aux" 1792786828 5195 53e5b2b6a48f0067800148ff4494beca "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792785234.846 "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" "main.pdf" "main" 1792785237.39137 0
+["pdflatex"] 1792786826.57642 "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" "main.pdf" "main" 1792786829.16495 0
   "C:/Users/willi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1792757803 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/willi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1791546629 13333487 0880f32e4a7356dd08b18856129655c6 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ectt1000.tfm" 993062340 1348 d70ddf2d5d512b838e50a335e385e919 ""
@@ -284,20 +284,20 @@
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/willi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" 1792785234 23771 b50e6857e894e36a20b5fadef1d79173 ""
-  "cover.aux" 1792785236 4194 34e27cc49fb3f5e4ff60f3539bc9e78c "pdflatex"
+  "c:/Users/willi/Desktop/Resources/Y7S2/The Art of Scientific Computation/Project/FinalReport/main.tex" 1792786826 25449 dfee086e56ba3e0f6f5df07eb3761ce7 ""
+  "cover.aux" 1792786827 4194 34e27cc49fb3f5e4ff60f3539bc9e78c "pdflatex"
   "cover.tex" 1791550538 1133 96d9bd8ef1694cf4e068e95e921efdc1 ""
   "figures/coulomb_direct.pdf" 1791546403 5557 e51ea044cb466b98b2dd7b039a2cd965 ""
   "figures/erlang_cdf.png" 1792756586 52801 57b5e0777042b63eff00dab9e9da67ab ""
   "figures/queue_traces.png" 1792756591 56346 8b345d695973eb55783b41d76634d206 ""
   "figures/rainfall.png" 1792778804 106288 d06171c533addb4bb1f9fc7918c3c702 ""
   "figures/uom_banner.pdf" 1791546403 39622 9739bcd37b5d485fa8a21c6a545e994a ""
-  "main.aux" 1792785236 5195 53e5b2b6a48f0067800148ff4494beca "pdflatex"
+  "main.aux" 1792786828 5195 53e5b2b6a48f0067800148ff4494beca "pdflatex"
   "main.bbl" 1792785003 7364 870dbce4f28910f1d55d565cb809e514 "bibtex main"
-  "main.out" 1792785236 1234 caca03cd5593919328c0cea29973dbf9 "pdflatex"
-  "main.run.xml" 1792785236 2534 e0ca3691ddee63c23b54be12e43a6c99 "pdflatex"
-  "main.tex" 1792785234 23771 b50e6857e894e36a20b5fadef1d79173 ""
-  "main.toc" 1792785236 722 f92b588037239d4a5d0e0a60868dcccd "pdflatex"
+  "main.out" 1792786828 1234 caca03cd5593919328c0cea29973dbf9 "pdflatex"
+  "main.run.xml" 1792786828 2534 e0ca3691ddee63c23b54be12e43a6c99 "pdflatex"
+  "main.tex" 1792786826 25449 dfee086e56ba3e0f6f5df07eb3761ce7 ""
+  "main.toc" 1792786828 722 f92b588037239d4a5d0e0a60868dcccd "pdflatex"
   "model1.csv" 1792755928 785 39af98ca314f39c41a7085fb7f2b1d69 ""
   "model1_verification.csv" 1792756586 600 963844d768cb1d61218176bc536b4fe1 ""
   "model2.csv" 1792755928 1586 55177626a6ea287172c7a011218e1c4c ""
